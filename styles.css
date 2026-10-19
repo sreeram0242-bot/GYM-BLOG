@@ -32,7 +32,8 @@
   --danger: #EF4444;
   --wa-green: #25D366;
   --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Space Grotesk', var(--font-main);
+  --font-heading: 'Bebas Neue', 'Space Grotesk', sans-serif;
+  --font-display: 'Bebas Neue', 'Space Grotesk', sans-serif;
   --shadow-sm: 0 1px 3px rgba(10, 25, 47, 0.06);
   --shadow-md: 0 4px 12px rgba(10, 25, 47, 0.08);
   --shadow-lg: 0 12px 30px -4px rgba(10, 25, 47, 0.12);
@@ -68,6 +69,17 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   position: relative;
+}
+
+/* ==========================================================================
+   Global Headings & Display Typography — Bebas Neue
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.15;
 }
 
 img {
@@ -153,13 +165,14 @@ button {
 }
 
 .section-title {
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 2.45rem;
+  font-weight: 400;
   color: var(--navy-deep);
-  letter-spacing: -0.02em;
-  line-height: 1.2;
+  letter-spacing: 0.04em;
+  line-height: 1.12;
   margin-bottom: 0.4rem;
+  text-transform: uppercase;
 }
 
 .section-subtitle {
@@ -317,11 +330,12 @@ button {
 }
 
 .brand-title {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 400;
   color: #FFFFFF;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .brand-badge {
@@ -456,12 +470,13 @@ button {
 }
 
 .hero-headline {
-  font-family: var(--font-display);
-  font-size: 2.85rem;
-  font-weight: 800;
-  line-height: 1.12;
-  letter-spacing: -0.025em;
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: 0.03em;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .hero-subheadline {
@@ -686,9 +701,12 @@ button {
 }
 
 .sim-card-title {
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
   color: var(--navy-deep);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 0.45rem;
@@ -1011,12 +1029,14 @@ button {
 }
 
 .feature-title {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
   color: var(--navy-deep);
   margin-bottom: 0.25rem;
-  line-height: 1.25;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .feature-desc {
@@ -1150,11 +1170,13 @@ button {
 }
 
 .plan-name {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 400;
   color: var(--navy-deep);
   margin-bottom: 0.2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .plan-subtitle {
@@ -1177,12 +1199,12 @@ button {
 }
 
 .amount {
-  font-family: var(--font-display);
-  font-size: 2.35rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 2.65rem;
+  font-weight: 400;
   color: var(--navy-deep);
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
 }
 
 .duration {
@@ -1252,11 +1274,13 @@ button {
 }
 
 .roi-header h3 {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 400;
   color: var(--navy-deep);
   margin-bottom: 0.2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .roi-header p {
@@ -1422,12 +1446,14 @@ button {
 }
 
 .demo-title {
-  font-family: var(--font-display);
-  font-size: 1.65rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 400;
   color: #FFFFFF;
-  line-height: 1.2;
+  line-height: 1.12;
+  letter-spacing: 0.04em;
   margin-bottom: 0.25rem;
+  text-transform: uppercase;
 }
 
 .demo-desc {
@@ -1676,9 +1702,9 @@ button {
   }
 
   .hero-headline {
-    font-size: 2.15rem;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
+    font-size: 2.35rem;
+    line-height: 1.12;
+    letter-spacing: 0.03em;
   }
 
   .hero-subheadline {
@@ -1884,7 +1910,7 @@ button {
   /* Features Section (Compact 2-Col Grid, NOT Vertically Stretched!) */
   .features-section { padding: 1.75rem 0; }
   .section-header { margin-bottom: 1.1rem; }
-  .section-title { font-size: 1.5rem; }
+  .section-title { font-size: 1.85rem; letter-spacing: 0.04em; }
   .section-subtitle { font-size: 0.82rem; }
 
   .features-grid {
@@ -1913,9 +1939,10 @@ button {
   }
 
   .feature-title {
-    font-size: 0.85rem;
+    font-size: 1.1rem;
     margin-bottom: 0.2rem;
-    line-height: 1.2;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
   }
 
   .feature-desc {
@@ -1967,7 +1994,7 @@ button {
     top: -9px;
   }
 
-  .plan-name { font-size: 0.9rem; }
+  .plan-name { font-size: 1.2rem; letter-spacing: 0.03em; }
   .plan-subtitle { font-size: 0.68rem; }
   .price-box { margin: 0.4rem 0 0.15rem; }
   .currency { font-size: 1rem; }
@@ -2037,7 +2064,7 @@ button {
     padding: 1.25rem 0.85rem;
     border-radius: 14px;
   }
-  .demo-title { font-size: 1.35rem; }
+  .demo-title { font-size: 1.65rem; letter-spacing: 0.04em; }
   .demo-desc { font-size: 0.78rem; margin-bottom: 0.75rem; }
 
   .demo-form-box.compact-form {
